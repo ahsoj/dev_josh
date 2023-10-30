@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay-Variable.ttf");
+}
+:root {
+  --font-libre-text: "Libre Caslon Text", serif;
+  --font-clash-display: "Clash Display", serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+.transition-base {
+  @apply transition-all duration-200 ease-in-out;
+}
