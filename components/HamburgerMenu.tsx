@@ -16,13 +16,13 @@ const HamburgerMenu: React.FC<HamburgerProps> = ({
       <button onMouseDown={togglehandler} className="space-y-2">
         <div
           className={twmesh(
-            "transition-base h-0.5 w-8 rounded-lg bg-white",
+            "transition-base h-0.5 w-8 rounded-lg bg-secondary",
             activate && "translate-y-1.5 rotate-45",
           )}
         />
         <div
           className={twmesh(
-            "transition-base h-0.5 w-8 rounded-lg bg-white",
+            "transition-base h-0.5 w-8 rounded-lg bg-secondary",
             activate && " -translate-y-1 -rotate-45",
           )}
         />

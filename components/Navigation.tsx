@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import twmesh from "@/utils/twmesh";
 import DrawerContent from "./DrawerContent";
 import { SocialLinks } from "./Drawer";
+import Link from "next/link";
 const Navigation = () => {
   const [activate, setActivate] = useState<boolean>(false);
   const togglehandler = () => {
@@ -17,17 +18,17 @@ const Navigation = () => {
   return (
     <header
       className={twmesh(
-        "border-secondary transition-base bg-brand fixed z-50 h-20 w-screen border-b px-4 md:hidden",
+        "transition-base fixed z-50 h-20 w-screen border-b border-secondary bg-brand px-4 md:hidden",
         activate && "transition-base h-screen",
       )}
     >
       <nav
         className={twmesh(
           "flex w-full flex-nowrap items-center justify-between gap-4 py-4",
-          activate && "border-secondary border-b",
+          activate && "border-b border-secondary",
         )}
       >
-        <div className="flex w-full grow flex-row items-center gap-4">
+        <Link href="/" className="flex w-full grow flex-row items-center gap-4">
           <div className="overflow-hidden">
             <Image
               src="/dev_josh.png"
@@ -40,9 +41,9 @@ const Navigation = () => {
           </div>
           <div className="text-start">
             <h2 className="font-clash text-xl font-bold">Dev Josh</h2>
-            <p className="whitespace-nowrap text-xs">Full-Stack engineer</p>
+            <p className="whitespace-nowrap text-xs">Jr. Full-Stack engineer</p>
           </div>
-        </div>
+        </Link>
         <HamburgerMenu activate={activate} togglehandler={togglehandler} />
       </nav>
       <div
@@ -51,7 +52,7 @@ const Navigation = () => {
           activate && "flex flex-col",
         )}
       >
-        <DrawerContent navigation />
+        <DrawerContent toggleHandler={togglehandler} navigation />
         <SocialLinks />
       </div>
     </header>

@@ -11,12 +11,12 @@ type DrawerProps = {};
 
 const Drawer = (...props: DrawerProps[]) => {
   return (
-    <aside className="bg-brand border-secondary transition-base fixed bottom-0 left-0 top-0 z-50 hidden h-screen w-screen border-r px-6 py-8 md:flex  md:w-48 xl:w-72">
+    <aside className="transition-base fixed bottom-0 left-0 top-0 z-50 hidden h-screen w-screen border-r border-secondary bg-brand px-6 py-8 md:flex  md:w-48 xl:w-72">
       <div className="flex w-full flex-col justify-between">
         <div>
           <Link
             href="/"
-            className="border-secondary flex w-full grow flex-col items-center gap-4 border-b pb-8 xl:flex-row"
+            className="flex w-full grow flex-col items-center gap-4 border-b border-secondary pb-8 xl:flex-row"
           >
             <div className="overflow-hidden">
               <Image
@@ -30,7 +30,9 @@ const Drawer = (...props: DrawerProps[]) => {
             </div>
             <div className="text-center xl:text-start">
               <h2 className="font-clash text-2xl font-bold">Dev Josh</h2>
-              <p className="whitespace-nowrap text-sm">Full-Stack engineer</p>
+              <p className="whitespace-nowrap text-sm">
+                Jr. Front-End Engineer
+              </p>
             </div>
           </Link>
           <DrawerContent />
@@ -43,7 +45,7 @@ const Drawer = (...props: DrawerProps[]) => {
 
 export const SocialLinks = () => {
   return (
-    <div className="border-secondary border-t pt-8">
+    <div className="border-t border-secondary pt-8">
       <div className="flex items-center justify-around gap-1 text-base text-zinc-500 xl:text-lg">
         <Link href="/">
           <IoLogoGithub />

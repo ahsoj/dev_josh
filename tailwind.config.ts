@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./containers/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -14,22 +15,22 @@ const config: Config = {
         roboto: ["var(--font-roboto)"],
       },
       backgroundColor: {
-        brand: "hsl(278, 100%, 4%)",
-        primary: "hsl(273, 71%, 32%)",
-        secondary: "hsl(44, 66%, 7%)",
-        accent: "hsl(73, 64%, 47%)",
+        brand: "hsl(0, 0%, 100%)",
+        primary: "hsl(294, 57%, 47%)",
+        secondary: "hsl(232, 38%, 88%)",
+        accent: "hsl(308, 48%, 50%)",
       },
       colors: {
-        brand: "hsl(224, 65%, 90%)",
-        primary: "hsl(273, 71%, 32%)",
-        secondary: "hsl(44, 66%, 7%)",
-        accent: "hsl(73, 64%, 47%)",
+        brand: "hsl(140, 60%, 1%)",
+        primary: "hsl(294, 57%, 47%)",
+        secondary: "hsl(232, 38%, 88%)",
+        accent: "hsl(308, 48%, 50%)",
       },
       borderColor: {
-        brand: "hsl(224, 65%, 90%)",
-        primary: "hsl(273, 71%, 32%)",
-        secondary: "hsl(44, 66%, 7%)",
-        accent: "hsl(73, 64%, 47%)",
+        brand: "hsl(183, 43%, 9%)",
+        primary: "hsl(294, 57%, 47%)",
+        secondary: "hsl(232, 38%, 88%)",
+        accent: "hsl(308, 48%, 50%)",
       },
       screens: {
         xs: "420px",
